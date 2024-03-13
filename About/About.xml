@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Production Genes 产物基因</name>
+	<author>DDJY</author>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Ludeon.RimWorld.Biotech</packageId>
+			<displayName>Biotech</displayName>
+		</li>
+	</modDependencies>
+	<packageId>DDJY.ProductionGenes</packageId>
+	<description>This mod adds genes that allow human bodies to produce various substances, which are divided into secretion genes and fur genes.
+	本mod添加了使人体可以生长出各种物资的基因，分为分泌物基因和毛发基因。
+	</description>
+</ModMetaData>
