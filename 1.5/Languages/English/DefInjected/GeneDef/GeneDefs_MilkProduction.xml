@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+<DDJY_MilkProduction.label>Milk Secretion</DDJY_MilkProduction.label>
+<DDJY_MilkProduction.description>Genes extracted from cows, modified using gene-editing technology, have been safely fused with human genes, capable of continuous secretion of milk.</DDJY_MilkProduction.description>
+<DDJY_MilkProduction.customEffectDescriptions.0>Capable of milk secretion</DDJY_MilkProduction.customEffectDescriptions.0>
+
+<DDJY_InsectJellyProduction.label>InsectJelly Secretion</DDJY_InsectJellyProduction.label>
+<DDJY_InsectJellyProduction.description>Genes extracted from insects, modified using gene-editing technology, have been safely fused with human genes, capable of continuous secretion of insect jelly.</DDJY_InsectJellyProduction.description>
+<DDJY_InsectJellyProduction.customEffectDescriptions.0>Capable of insectJelly secretion</DDJY_InsectJellyProduction.customEffectDescriptions.0>
+
+<DDJY_ChemfuelProduction.label>Chemfuel Secretion</DDJY_ChemfuelProduction.label>
+<DDJY_ChemfuelProduction.description>Genes extracted from boomrats, modified using gene-editing technology, have been safely fused with human genes, capable of continuous secretion of chemfuel.</DDJY_ChemfuelProduction.description>
+<DDJY_ChemfuelProduction.customEffectDescriptions.0>Capable of chemfuel secretion</DDJY_ChemfuelProduction.customEffectDescriptions.0>
+
+<DDJY_NeutroamineProduction.label>Neutroamine Secretion</DDJY_NeutroamineProduction.label>
+<DDJY_NeutroamineProduction.description>A groundbreaking biotechnology that works in mysterious ways, capable of continuous secretion of neutroamine.</DDJY_NeutroamineProduction.description>
+<DDJY_NeutroamineProduction.customEffectDescriptions.0>Capable of neutroamine secretion</DDJY_NeutroamineProduction.customEffectDescriptions.0>
+
+<DDJY_PsychiteTeaProduction.label>Psychite Tea Secretion</DDJY_PsychiteTeaProduction.label>
+<DDJY_PsychiteTeaProduction.description>A groundbreaking biotechnology that works in mysterious ways, capable of continuous secretion of psychite tea.</DDJY_PsychiteTeaProduction.description>
+<DDJY_PsychiteTeaProduction.customEffectDescriptions.0>Capable of psychite secretion</DDJY_PsychiteTeaProduction.customEffectDescriptions.0>
+
+<DDJY_BeerProduction.label>Beer Secretion</DDJY_BeerProduction.label>
+<DDJY_BeerProduction.description>A groundbreaking biotechnology that works in mysterious ways, capable of continuous secretion of beer.</DDJY_BeerProduction.description>
+<DDJY_BeerProduction.customEffectDescriptions.0>Capable of beer secretion</DDJY_BeerProduction.customEffectDescriptions.0>
+
+<DDJY_GoJuiceProduction.label>Go-Juice Secretion</DDJY_GoJuiceProduction.label>
+<DDJY_GoJuiceProduction.description>A groundbreaking biotechnology that works in mysterious ways, capable of continuous secretion of go-juice.</DDJY_GoJuiceProduction.description>
+<DDJY_GoJuiceProduction.customEffectDescriptions.0>Capable of go-Juice secretion</DDJY_GoJuiceProduction.customEffectDescriptions.0>
+
+</LanguageData>

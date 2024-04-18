@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <DDJY_WoolSheepProduction.label>Wool Sheep Growth</DDJY_WoolSheepProduction.label>
+  <DDJY_WoolSheepProduction.description>Genes extracted from sheep can now be safely fused with human genes through gene-editing technology, resulting in a material that turns human hair into wool sheep.</DDJY_WoolSheepProduction.description>
+  <DDJY_WoolSheepProduction.customEffectDescriptions.0>Capable of wool sheep growth</DDJY_WoolSheepProduction.customEffectDescriptions.0>
+
+  <DDJY_ClothProduction.label>Cloth Growth</DDJY_ClothProduction.label>
+  <DDJY_ClothProduction.description>Genes extracted from cotton can now be safely fused with human genes through gene-editing technology, resulting in a material that turns human hair into cloth fibers.</DDJY_ClothProduction.description>
+  <DDJY_ClothProduction.customEffectDescriptions.0>Capable of cloth growth</DDJY_ClothProduction.customEffectDescriptions.0>
+
+  <DDJY_SynthreadProduction.label>Synthread Growth</DDJY_SynthreadProduction.label>
+  <DDJY_SynthreadProduction.description>An unparalleled biotechnology that can turn human hair into Synthread, although the exact process is unknown.</DDJY_SynthreadProduction.description>
+  <DDJY_SynthreadProduction.customEffectDescriptions.0>Capable of synthread growth</DDJY_SynthreadProduction.customEffectDescriptions.0>
+
+  <DDJY_DevilstrandClothProduction.label>Devilstrand Cloth Growth</DDJY_DevilstrandClothProduction.label>
+  <DDJY_DevilstrandClothProduction.description>Genes extracted from devil mushrooms can now be safely fused with human genes through gene-editing technology, resulting in a material that turns human hair into devilstrand cloth fibers.</DDJY_DevilstrandClothProduction.description>
+  <DDJY_DevilstrandClothProduction.customEffectDescriptions.0>Capable of devilstrand cloth growth </DDJY_DevilstrandClothProduction.customEffectDescriptions.0>
+
+  <DDJY_HyperweaveProduction.label>Hyperweave Growth</DDJY_HyperweaveProduction.label>
+  <DDJY_HyperweaveProduction.description>An unparalleled biotechnology that can turn human hair into hyperweave fibers, although the exact process is unknown.</DDJY_HyperweaveProduction.description>
+  <DDJY_HyperweaveProduction.customEffectDescriptions.0>Capable of hyperweave growth </DDJY_HyperweaveProduction.customEffectDescriptions.0>
+
+</LanguageData>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DDJY_WoolSheepProduction.label>长出羊毛</DDJY_WoolSheepProduction.label>
+  <DDJY_WoolSheepProduction.description>从绵羊身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，将人的毛发变成羊毛的材质。</DDJY_WoolSheepProduction.description>
+
+  <DDJY_ClothProduction.label>长出布</DDJY_ClothProduction.label>
+  <DDJY_ClothProduction.description>从棉花上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，将人的毛发变成布纤维。</DDJY_ClothProduction.description>
+
+  <DDJY_SynthreadProduction.label>长出合成纤维</DDJY_SynthreadProduction.label>
+  <DDJY_SynthreadProduction.description>无与伦比的生物技术，怎么做到的不得而知，可以将人的毛发变成合成纤维。</DDJY_SynthreadProduction.description>
+
+  <DDJY_DevilstrandClothProduction.label>长出魔菇布</DDJY_DevilstrandClothProduction.label>
+  <DDJY_DevilstrandClothProduction.description>从恶魔菇身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，将人的毛发变成魔菇布纤维。</DDJY_DevilstrandClothProduction.description>
+
+  <DDJY_HyperweaveProduction.label>长出超织物</DDJY_HyperweaveProduction.label>
+  <DDJY_HyperweaveProduction.description>无与伦比的生物技术，怎么做到的不得而知，可以将人的毛发变成超织物纤维。</DDJY_HyperweaveProduction.description>
+
+
+</LanguageData>

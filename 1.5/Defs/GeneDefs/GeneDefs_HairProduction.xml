@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>DDJY_WoolSheepProduction</defName>
+    <label>长出羊毛</label>
+    <description>从绵羊身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，将人的毛发变成羊毛的材质。</description>
+    <iconPath>Genes/Wool</iconPath>
+    <iconColor>(219,214,209)</iconColor>
+    <geneClass>DDJY.Gene_HairProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>1000</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以使身体长出羊毛</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_HairProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>10</interval>
+        <amount>45</amount>
+        <produce>WoolSheep</produce>
+        <femaleOnly>false</femaleOnly>
+      </li>
+    </modExtensions>
+    <minAgeActive>12</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DDJY_ClothProduction</defName>
+    <label>长出布</label>
+    <description>从棉花上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，将人的毛发变成布纤维。</description>
+    <iconPath>Genes/Cloth</iconPath>
+    <iconColor>(162,157,152)</iconColor>
+    <geneClass>DDJY.Gene_HairProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>530</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以使身体长出布</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_HairProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>10</interval>
+        <amount>80</amount>
+        <produce>Cloth</produce>
+        <femaleOnly>false</femaleOnly>
+      </li>
+    </modExtensions>
+    <minAgeActive>12</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+   <GeneDef>
+    <defName>DDJY_SynthreadProduction</defName>
+    <label>长出合成纤维</label>
+    <description>无与伦比的生物技术，怎么做到的不得而知，可以将人的毛发变成合成纤维。</description>
+    <iconPath>Genes/Synthread</iconPath>
+    <geneClass>DDJY.Gene_HairProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    
+    <displayOrderInCategory>520</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以使身体长出合成纤维</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_HairProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>10</interval>
+        <amount>30</amount>
+        <produce>Synthread</produce>
+        <femaleOnly>false</femaleOnly>
+      </li>
+    </modExtensions>
+    <minAgeActive>12</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DDJY_DevilstrandClothProduction</defName>
+    <label>长出魔菇布</label>
+    <description>从恶魔菇身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，将人的毛发变成魔菇布纤维。</description>
+    <iconPath>Genes/Devilstrand</iconPath>
+    <geneClass>DDJY.Gene_HairProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>510</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以使身体长出魔菇布</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_HairProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>10</interval>
+        <amount>20</amount>
+        <produce>DevilstrandCloth</produce>
+        <femaleOnly>false</femaleOnly>
+      </li>
+    </modExtensions>
+    <minAgeActive>12</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DDJY_HyperweaveProduction</defName>
+    <label>长出超织物</label>
+    <description>无与伦比的生物技术，怎么做到的不得而知，可以将人的毛发变成超织物纤维。</description>
+    <iconPath>Genes/Hyperweave</iconPath>
+    <geneClass>DDJY.Gene_HairProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>500</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以使身体长出超织物</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_HairProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>11</interval>
+        <amount>15</amount>
+        <produce>Hyperweave</produce>
+        <femaleOnly>false</femaleOnly>
+      </li>
+    </modExtensions>
+    <minAgeActive>12</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+</Defs>

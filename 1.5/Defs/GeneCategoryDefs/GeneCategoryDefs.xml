@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneCategoryDef>
+    <defName>DDJY_GatherHumanCategory</defName>
+    <label>产物</label>
+    <displayPriorityInXenotype>286</displayPriorityInXenotype>
+    <displayPriorityInGenepack>-109</displayPriorityInGenepack>
+  </GeneCategoryDef>
+</Defs>
