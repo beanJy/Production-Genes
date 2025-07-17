@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <GeneDef>
+    <defName>DDJY_MilkProduction</defName>
+    <label>产奶</label>
+    <description>从奶牛身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，可以使人源源不断的分泌乳汁。</description>
+    <iconPath>Genes/Milk</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>400</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以产奶</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>1</interval>
+        <amount>14</amount>
+        <produce>Milk</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>0.5</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+
+  <GeneDef>
+    <defName>DDJY_InsectJellyProduction</defName>
+    <label>分泌虫胶</label>
+    <description>从虫子身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，可以使人源源不断的分泌虫胶。</description>
+    <iconPath>Genes/InsectJelly</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>  
+    <displayOrderInCategory>390</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以分泌虫胶</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>1</interval>
+        <amount>14</amount>
+        <produce>InsectJelly</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>0.5</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+
+  <GeneDef>
+    <defName>DDJY_ChemfuelProduction</defName>
+    <label>分泌化合燃料</label>
+    <description>从爆炸羊身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，可以使人源源不断的分泌化合燃料。</description>
+    <iconPath>Genes/Chemfuel</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>380</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以分泌化合燃料</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>1</interval>
+        <amount>12</amount>
+        <produce>Chemfuel</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>0.5</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>1</biostatCpx>
+    <biostatMet>-1</biostatMet>
+  </GeneDef>
+
+    <GeneDef>
+    <defName>DDJY_NeutroamineProduction</defName>
+    <label>分泌中性胺</label>
+    <description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌中性胺。</description>
+    <iconPath>Genes/Neutroamine</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory> 
+    <displayOrderInCategory>379</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以分泌中性胺</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>3</interval>
+        <amount>10</amount>
+        <produce>Neutroamine</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>1.5</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+<GeneDef>
+    <defName>DDJY_PsychiteTeaProduction</defName>
+    <label>分泌精神茶</label>
+    <description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌精神茶。</description>
+    <iconPath>Genes/Tea</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>378</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以分泌精神茶</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>3</interval>
+        <amount>5</amount>
+        <produce>PsychiteTea</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>1.5</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DDJY_BeerProduction</defName>
+    <label>分泌啤酒</label>
+    <description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌啤酒。</description>
+    <iconPath>Genes/Beer</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>  
+    <displayOrderInCategory>370</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以分泌啤酒</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>3</interval>
+        <amount>5</amount>
+        <produce>Beer</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>1.5</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>DDJY_GoJuiceProduction</defName>
+    <label>分泌活力水</label>
+    <description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌活力水。</description>
+    <iconPath>Genes/GoJuice</iconPath>
+    <geneClass>DDJY.Gene_MilkProduction</geneClass>
+    <displayCategory>DDJY_GatherHumanCategory</displayCategory>
+    <displayOrderInCategory>360</displayOrderInCategory>
+    <customEffectDescriptions>
+      <li>可以分泌活力水</li>
+    </customEffectDescriptions>
+    <exclusionTags>
+      <li>DDJY_MilkProduction</li>
+    </exclusionTags>
+    <modExtensions>
+      <li Class="DDJY.DefModExtension_Gene">
+        <interval>10</interval>
+        <amount>5</amount>
+        <produce>GoJuice</produce>
+        <femaleOnly>true</femaleOnly>
+        <fullChargeAmount>5.0</fullChargeAmount>
+      </li>
+    </modExtensions>
+    <minAgeActive>18</minAgeActive>
+    <biostatCpx>2</biostatCpx>
+    <biostatMet>-2</biostatMet>
+  </GeneDef>
+
+
+</Defs>

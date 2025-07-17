@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <DDJY_MilkProduction.label>产奶</DDJY_MilkProduction.label>
+  <DDJY_MilkProduction.description>从奶牛身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，可以使人源源不断的分泌乳汁。</DDJY_MilkProduction.description>
+
+  <DDJY_InsectJellyProduction.label>分泌虫胶</DDJY_InsectJellyProduction.label>
+  <DDJY_InsectJellyProduction.description>从虫子身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，可以使人源源不断的分泌虫胶。</DDJY_InsectJellyProduction.description>
+
+  <DDJY_ChemfuelProduction.label>分泌化合燃料</DDJY_ChemfuelProduction.label>
+  <DDJY_ChemfuelProduction.description>从爆炸羊身上提取的基因，经过基因改写技术，已经可以安全的与人类基因融合，可以使人源源不断的分泌化合燃料。</DDJY_ChemfuelProduction.description>
+
+  <DDJY_NeutroamineProduction.label>分泌中性胺</DDJY_NeutroamineProduction.label>
+  <DDJY_NeutroamineProduction.description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌中性胺。</DDJY_NeutroamineProduction.description>
+
+  <DDJY_PsychiteTeaProduction.label>分泌精神茶</DDJY_PsychiteTeaProduction.label>
+  <DDJY_PsychiteTeaProduction.description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌精神茶。</DDJY_PsychiteTeaProduction.description>
+
+  <DDJY_BeerProduction.label>分泌啤酒</DDJY_BeerProduction.label>
+  <DDJY_BeerProduction.description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌啤酒。</DDJY_BeerProduction.description>
+
+  <DDJY_GoJuiceProduction.label>分泌活力水</DDJY_GoJuiceProduction.label>
+  <DDJY_GoJuiceProduction.description>无与伦比的生物技术，怎么做到的不得而知，可以使人源源不断的分泌活力水。</DDJY_GoJuiceProduction.description>
+
+
+</LanguageData>

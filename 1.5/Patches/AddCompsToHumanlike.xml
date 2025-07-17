@@ -28,12 +28,6 @@
 			  	</li>
 		  	</value>
 		</li>
-		<li Class="PatchOperationReplace">
-       	  	<xpath>Defs/HediffDef[defName="Lactating"]/comps/li[@Class="HediffCompProperties_Lactating"]/labelInBrackets</xpath>
-    		<value>
-				<labelInBrackets>{PRODUCENAME} fullness {CHARGEFACTOR_percentage}</labelInBrackets>
-			</value>
-      	</li>
 	  </operations>
 	</Operation>
 </Patch>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <WorkGiverDef>
+    <defName>DDJY_Milk</defName>
+    <label>给人挤奶</label>
+    <giverClass>DDJY.WorkGiver_MilkableHuman</giverClass>
+    <workType>Handling</workType>
+    <verb>收集</verb>
+    <gerund>收集中</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+    <WorkGiverDef>
+    <defName>DDJY_Hair</defName>
+    <label>给人剪毛</label>
+    <giverClass>DDJY.WorkGiver_HairHuman</giverClass>
+    <workType>Handling</workType>
+    <verb>收集</verb>
+    <gerund>收集中</gerund>
+    <priorityInType>90</priorityInType>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </WorkGiverDef>
+
+</Defs>
