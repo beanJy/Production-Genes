@@ -154,6 +154,14 @@ namespace DDJY
             }
 
         }
+        public override void CompPostTickInterval(ref float severityAdjustment, int delta)
+        {
+            base.CompPostTickInterval(ref severityAdjustment, delta);
+            if (nonOverriddenGene!=null && !nonOverriddenGene.Active)
+            {
+                Pawn.health.RemoveHediff(nonOverriddenGene.lactatingHediff);
+            }
+        }
 
         public override void CompExposeData()
         {

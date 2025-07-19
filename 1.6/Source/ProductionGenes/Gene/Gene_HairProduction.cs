@@ -6,7 +6,7 @@ namespace DDJY
 {
     public class Gene_HairProduction : Gene
     {
-        private Hediff hairProductionHediff;
+        public Hediff hairProductionHediff;
         public override void PostAdd()
         {
             base.PostAdd();
@@ -45,10 +45,6 @@ namespace DDJY
             if (Active)
             {
                 AddHairProductionHediff();
-            }
-            else
-            {
-                RemoveHairProductionHediff();
             }
         }
 

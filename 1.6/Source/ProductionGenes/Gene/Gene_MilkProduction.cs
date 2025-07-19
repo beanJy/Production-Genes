@@ -5,7 +5,7 @@ namespace DDJY
 {
     public class Gene_MilkProduction : Gene
     {
-        private Hediff lactatingHediff;
+        public Hediff lactatingHediff;
 
         public override void PostAdd() 
         {
@@ -45,10 +45,6 @@ namespace DDJY
             if (Active)
             {
                 AddLactatingHediff();
-            }
-            else
-            {
-                RemoveLactatingHediff();
             }
         }
         //添加哺乳期
