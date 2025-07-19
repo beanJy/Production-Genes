@@ -11,6 +11,7 @@
     <displayOrderInCategory>400</displayOrderInCategory>
     <customEffectDescriptions>
       <li>可以产奶</li>
+      <li>可以哺乳</li>
     </customEffectDescriptions>
     <exclusionTags>
       <li>DDJY_MilkProduction</li>
@@ -18,7 +19,7 @@
     <modExtensions>
       <li Class="DDJY.DefModExtension_Gene">
         <interval>1</interval>
-        <amount>14</amount>
+        <amount>10</amount>
         <produce>Milk</produce>
         <femaleOnly>true</femaleOnly>
         <fullChargeAmount>0.5</fullChargeAmount>
@@ -26,7 +27,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
 
@@ -40,6 +41,7 @@
     <displayOrderInCategory>390</displayOrderInCategory>
     <customEffectDescriptions>
       <li>可以分泌虫胶</li>
+      <li>可以哺乳</li>
     </customEffectDescriptions>
     <exclusionTags>
       <li>DDJY_MilkProduction</li>
@@ -47,7 +49,7 @@
     <modExtensions>
       <li Class="DDJY.DefModExtension_Gene">
         <interval>1</interval>
-        <amount>14</amount>
+        <amount>10</amount>
         <produce>InsectJelly</produce>
         <femaleOnly>true</femaleOnly>
         <fullChargeAmount>0.5</fullChargeAmount>
@@ -55,7 +57,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
 
@@ -84,7 +86,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>1</biostatCpx>
-    <biostatMet>-1</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
     <GeneDef>
@@ -112,7 +114,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
 <GeneDef>
@@ -140,7 +142,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
   <GeneDef>
@@ -168,7 +170,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
   <GeneDef>
@@ -196,7 +198,7 @@
     </modExtensions>
     <minAgeActive>18</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>0</biostatMet>
   </GeneDef>
 
 

@@ -12,6 +12,8 @@ namespace DDJY
         }
 
         public static ThingDef Milk;
+        public static ThingDef WoolSheep;
         public static GeneDef DDJY_MilkProduction;
+        public static GeneDef DDJY_InsectJellyProduction;
     }
 }

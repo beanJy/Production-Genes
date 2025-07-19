@@ -3,5 +3,6 @@
 
   <Growing>growing</Growing>
   <Secreting>secreting</Secreting>
-
+  <DDJY_HediffComp_MilkableHuman_AllowMilking_Label>Allow Milking</DDJY_HediffComp_MilkableHuman_AllowMilking_Label>
+  <DDJY_HediffComp_MilkableHuman_AllowMilking_Desc>Whether milking is allowed.&#10;This button is only visible when the pawn has Childcare work enabled.&#10;This button is only visible if the gene is either Milk Secretion or Insect Jelly Secretion.</DDJY_HediffComp_MilkableHuman_AllowMilking_Desc>
 </LanguageData>

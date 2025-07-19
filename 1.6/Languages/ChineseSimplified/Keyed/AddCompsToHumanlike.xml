@@ -3,5 +3,6 @@
 
   <Growing>生长中</Growing>
   <Secreting>分泌中</Secreting>
-
+  <DDJY_HediffComp_MilkableHuman_AllowMilking_Label>允许挤奶</DDJY_HediffComp_MilkableHuman_AllowMilking_Label>
+  <DDJY_HediffComp_MilkableHuman_AllowMilking_Desc>是否允许挤奶.&#10;只在人物拥有 保育 工作时显示该按钮.&#10;只在基因为 产奶 和 生成虫胶 时显示该按钮.</DDJY_HediffComp_MilkableHuman_AllowMilking_Desc>
 </LanguageData>

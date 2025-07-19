@@ -57,22 +57,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CompHairHuman.cs" />
-    <Compile Include="CompMikableHuman.cs" />
-    <Compile Include="CompProperties_HairGene.cs" />
-    <Compile Include="CompProperties_MilkableGene.cs" />
-    <Compile Include="DDJY_JobDefOf.cs" />
-    <Compile Include="DDJY_ThingDefOf.cs" />
-    <Compile Include="DefModExtension_Gene.cs" />
-    <Compile Include="Gene_HairProduction.cs" />
-    <Compile Include="Gene_MilkProduction.cs" />
-    <Compile Include="JobDriver_GatherHumanBodyResources.cs" />
-    <Compile Include="JobDriver_HairHuman.cs" />
-    <Compile Include="JobDriver_MilkableHuman.cs" />
+    <Compile Include="Def\DDJY_HediffDefOf.cs" />
+    <Compile Include="Def\DDJY_JobDefOf.cs" />
+    <Compile Include="Def\DDJY_ThingDefOf.cs" />
+    <Compile Include="Def\DefModExtension_Gene.cs" />
+    <Compile Include="Gene\Gene_HairProduction.cs" />
+    <Compile Include="Gene\Gene_MilkProduction.cs" />
+    <Compile Include="HediffComp\HediffCompProperties_HairProduction.cs" />
+    <Compile Include="HediffComp\HediffCompProperties_MilkableHuman.cs" />
+    <Compile Include="HediffComp\HediffComp_GatherHuman.cs" />
+    <Compile Include="HediffComp\HediffComp_HairHuman.cs" />
+    <Compile Include="HediffComp\HediffComp_MilkableHuman.cs" />
+    <Compile Include="JobDriver\JobDriver_GatherHumanBodyResources.cs" />
+    <Compile Include="JobDriver\JobDriver_HairHuman.cs" />
+    <Compile Include="JobDriver\JobDriver_MilkableHuman.cs" />
     <Compile Include="Patch.cs" />
-    <Compile Include="WorkGiver_GatherHumanBodyResources.cs" />
-    <Compile Include="WorkGiver_HairHuman.cs" />
-    <Compile Include="WorkGiver_MilkableHuman.cs" />
+    <Compile Include="WorkGiver\WorkGiver_GatherHumanBodyResources.cs" />
+    <Compile Include="WorkGiver\WorkGiver_HairHuman.cs" />
+    <Compile Include="WorkGiver\WorkGiver_MilkableHuman.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

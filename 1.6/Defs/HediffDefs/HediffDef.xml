@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <HediffDef>
+    <defName>DDJY_HairProductionHediff</defName>
+    <label>hair production</label>
+    <description>hair production status added by gene.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <initialSeverity>1</initialSeverity>
+    <everCurableByItem>false</everCurableByItem>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>0</severityPerDay>
+      </li>
+      <li Class="DDJY.HediffCompProperties_HairProduction">
+        <labelInBrackets>{PRODUCENAME} fullness {CHARGEFACTOR_percentage}</labelInBrackets>
+        <InspectString>Growing</InspectString>
+      </li>
+    </comps>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+</Defs>

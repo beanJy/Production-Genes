@@ -3,10 +3,12 @@
 <DDJY_MilkProduction.label>Milk Secretion</DDJY_MilkProduction.label>
 <DDJY_MilkProduction.description>Genes extracted from cows, modified using gene-editing technology, have been safely fused with human genes, capable of continuous secretion of milk.</DDJY_MilkProduction.description>
 <DDJY_MilkProduction.customEffectDescriptions.0>Capable of milk secretion</DDJY_MilkProduction.customEffectDescriptions.0>
+<DDJY_MilkProduction.customEffectDescriptions.1>Capable of breastfeed</DDJY_MilkProduction.customEffectDescriptions.1>
 
 <DDJY_InsectJellyProduction.label>InsectJelly Secretion</DDJY_InsectJellyProduction.label>
 <DDJY_InsectJellyProduction.description>Genes extracted from insects, modified using gene-editing technology, have been safely fused with human genes, capable of continuous secretion of insect jelly.</DDJY_InsectJellyProduction.description>
 <DDJY_InsectJellyProduction.customEffectDescriptions.0>Capable of insectJelly secretion</DDJY_InsectJellyProduction.customEffectDescriptions.0>
+<DDJY_MilkProduction.customEffectDescriptions.1>Capable of breastfeed</DDJY_MilkProduction.customEffectDescriptions.1>
 
 <DDJY_ChemfuelProduction.label>Chemfuel Secretion</DDJY_ChemfuelProduction.label>
 <DDJY_ChemfuelProduction.description>Genes extracted from boomrats, modified using gene-editing technology, have been safely fused with human genes, capable of continuous secretion of chemfuel.</DDJY_ChemfuelProduction.description>

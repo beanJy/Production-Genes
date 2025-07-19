@@ -17,7 +17,7 @@
     </exclusionTags>
     <modExtensions>
       <li Class="DDJY.DefModExtension_Gene">
-        <interval>10</interval>
+        <interval>1</interval>
         <amount>45</amount>
         <produce>WoolSheep</produce>
         <femaleOnly>false</femaleOnly>
@@ -81,7 +81,7 @@
     </modExtensions>
     <minAgeActive>12</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>-1</biostatMet>
   </GeneDef>
 
   <GeneDef>
@@ -108,7 +108,7 @@
     </modExtensions>
     <minAgeActive>12</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>-1</biostatMet>
   </GeneDef>
 
   <GeneDef>
@@ -135,6 +135,6 @@
     </modExtensions>
     <minAgeActive>12</minAgeActive>
     <biostatCpx>2</biostatCpx>
-    <biostatMet>-2</biostatMet>
+    <biostatMet>-1</biostatMet>
   </GeneDef>
 </Defs>

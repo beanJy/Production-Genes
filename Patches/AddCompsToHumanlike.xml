@@ -2,31 +2,13 @@
 <Patch>
 	<Operation Class="PatchOperationSequence">
 	  <operations>
-		<li Class="PatchOperationConditional">
-			<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
-			<nomatch Class="PatchOperationAdd">
-		  	<xpath>Defs/ThingDef[defName="Human"]</xpath>
-		  		<value>
-					<comps>
-					</comps>
-		  		</value>
-			</nomatch>
-		</li>
 		<li Class="PatchOperationAdd">
-		  	<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
+		  	<xpath>Defs/HediffDef[defName="Lactating"]/comps</xpath>
 		  	<value>
-			 	 <li Class="DDJY.CompProperties_MilkableGene">
+			 	 <li Class="DDJY.HediffCompProperties_MilkableHuman">
 			  		<InspectString>Secreting</InspectString>
 			  	</li>
 		 	 </value>
-		</li>
-		<li Class="PatchOperationAdd">
-			<xpath>Defs/ThingDef[defName="Human"]/comps</xpath>
-		  	<value>
-			 	<li Class="DDJY.CompProperties_HairGene">
-			  		<InspectString>Growing</InspectString>
-			  	</li>
-		  	</value>
 		</li>
 		<li Class="PatchOperationReplace">
        	  	<xpath>Defs/HediffDef[defName="Lactating"]/comps/li[@Class="HediffCompProperties_Lactating"]/labelInBrackets</xpath>
