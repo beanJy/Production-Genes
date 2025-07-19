@@ -17,7 +17,7 @@
     </exclusionTags>
     <modExtensions>
       <li Class="DDJY.DefModExtension_Gene">
-        <interval>1</interval>
+        <interval>10</interval>
         <amount>45</amount>
         <produce>WoolSheep</produce>
         <femaleOnly>false</femaleOnly>
