@@ -56,7 +56,7 @@ namespace DDJY
             };
             wait.AddFinishAction(delegate
             {
-                if (pawn != null && pawn.CurJobDef == JobDefOf.Wait_MaintainPosture)
+                if (pawn != null && (pawn.CurJobDef == JobDefOf.Wait_MaintainPosture || pawn.CurJobDef == JobDefOf.LayDownAwake))
                 {
                     pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
                 }
