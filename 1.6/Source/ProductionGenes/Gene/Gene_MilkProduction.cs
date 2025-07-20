@@ -80,7 +80,7 @@ namespace DDJY
             }
             if(hediffComp_Lactating != null)
             {
-               hediffComp_Lactating.GreedyConsume(99999);
+                hediffComp_Lactating.GreedyConsume(99999);
             }
         }
         //移除哺乳期

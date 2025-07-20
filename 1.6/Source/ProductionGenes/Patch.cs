@@ -13,6 +13,7 @@ using static RimWorld.TransferableUIUtility;
 using System.Text;
 using static RimWorld.ColonistBar;
 using static RimWorld.ChildcareUtility;
+using Verse.AI;
 
 namespace DDJY.Patch
 {
@@ -228,6 +229,51 @@ namespace DDJY.Patch
                 
             }
             return;
+        }
+    }
+    //跳过生育率检测
+    [HarmonyPatchCategory("ProductionGenes_Patch")]
+    [HarmonyPatch(typeof(StatPart_FertilityByHediffs), "Factor")]
+    internal static class StatPart_FertilityByHediffs_Factor
+    {
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+        {
+            var codes = new List<CodeInstruction>(instructions);
+            var label1 = generator.DefineLabel();
+            MethodInfo getCurrentMethod = AccessTools.Method(typeof(List<Verse.Hediff>.Enumerator), "get_Current");
+            MethodInfo moveNextMethod = AccessTools.Method(typeof(List<Verse.Hediff>.Enumerator), "MoveNext");
+            var shouldSkipMethod = AccessTools.Method(typeof(HediffComp_MilkableHuman), "ShouldSkipFertilityCheck");
+
+            // 绑定label
+            for (var i = 0; i < codes.Count - 2; i++)
+            {
+                if (codes[i].opcode == OpCodes.Ldloca_S &&
+                    codes[i + 1].Calls(moveNextMethod) &&
+                    codes[i + 2].opcode == OpCodes.Brtrue_S)
+                {
+                    codes[i].labels.Add(label1);
+                    break;
+                }
+            }
+
+            // 插入判断代码
+            for (var i = 0; i < codes.Count - 2; i++)
+            {
+                if (codes[i].opcode == OpCodes.Ldloca_S &&
+                    codes[i + 1].Calls(getCurrentMethod) &&
+                    codes[i + 2].opcode == OpCodes.Stloc_2)
+                {
+                    codes.InsertRange(i + 3, new[]
+                    {
+                        new CodeInstruction(OpCodes.Ldloc_2),
+                        new CodeInstruction(OpCodes.Call, shouldSkipMethod),
+                        new CodeInstruction(OpCodes.Brtrue, label1),
+                    });
+                    break;
+                }
+            }
+
+            return codes;
         }
     }
 

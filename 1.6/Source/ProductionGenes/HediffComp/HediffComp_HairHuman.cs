@@ -63,6 +63,7 @@ namespace DDJY
                         fullness = 1f;
                     }
                 }
+                //基因未激活移除hediff
                 if (nonOverriddenGene != null && !nonOverriddenGene.Active)
                 {
                     Pawn.health.RemoveHediff(nonOverriddenGene.hairProductionHediff);

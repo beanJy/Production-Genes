@@ -112,6 +112,16 @@ namespace DDJY
             }
             return false;
         }
+        //判断是否应跳过生育率检测
+        public static bool ShouldSkipFertilityCheck(Hediff hediff)
+        {
+            var comp = hediff.TryGetComp<HediffComp_MilkableHuman>();
+            if (comp != null && comp.nonOverriddenGene != null)
+            {
+                return true;
+            }
+            return false;
+        }
         //面板信息
         public string CompInspectStringExtra()
         {
@@ -154,6 +164,7 @@ namespace DDJY
             }
 
         }
+        //基因为激活移除hediff
         public override void CompPostTickInterval(ref float severityAdjustment, int delta)
         {
             base.CompPostTickInterval(ref severityAdjustment, delta);
