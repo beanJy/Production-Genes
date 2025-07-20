@@ -29,8 +29,9 @@ namespace DDJY
 
         protected override IEnumerable<Toil> MakeNewToils()
         {
+            Pawn pawn = (Pawn)this.job.GetTarget(TargetIndex.A).Thing;
+            this.FailOn(() => pawn.Downed && !pawn.InBed());
             this.FailOnDespawnedNullOrForbidden(TargetIndex.A);
-            this.FailOnDowned(TargetIndex.A);
             this.FailOnNotCasualInterruptible(TargetIndex.A);
             yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.Touch);
             Toil wait = ToilMaker.MakeToil("MakeNewToils");
@@ -55,7 +56,6 @@ namespace DDJY
             };
             wait.AddFinishAction(delegate
             {
-                Pawn pawn = (Pawn)job.GetTarget(TargetIndex.A).Thing;
                 if (pawn != null && pawn.CurJobDef == JobDefOf.Wait_MaintainPosture)
                 {
                     pawn.jobs.EndCurrentJob(JobCondition.InterruptForced);
