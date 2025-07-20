@@ -50,7 +50,7 @@ namespace DDJY
                 if (gatherProgress >= WorkTotal)
                 {
                     GetComp(target).Gathered(actor);
-                    actor.jobs.EndCurrentJob(JobCondition.Succeeded);
+                    actor.jobs.EndCurrentJob(JobCondition.Succeeded, true, true);
                 }
             };
             wait.AddFinishAction(delegate

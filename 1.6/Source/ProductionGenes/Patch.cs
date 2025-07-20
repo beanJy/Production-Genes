@@ -277,6 +277,38 @@ namespace DDJY.Patch
         }
     }
 
+    //可搬运囚犯区奶
+    [HarmonyPatchCategory("ProductionGenes_Patch")]
+    [HarmonyPatch(typeof(HaulAIUtility), "PawnCanAutomaticallyHaulFast")]
+    public static class HaulAIUtility_PawnCanAutomaticallyHaulFast
+    {
+        public static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions, ILGenerator generator)
+        {
+            var codes = new List<CodeInstruction>(instructions);
+            var IsSociallyProper = AccessTools.Method(typeof(SocialProperness), "IsSociallyProper",new Type[] { typeof(Thing), typeof(Pawn), typeof(bool), typeof(bool) });
+            var IsInGeneMilkList = AccessTools.Method(typeof(HediffComp_GatherHuman), "IsInGeneMilkList");
+            for (var i = 0; i < codes.Count - 2; i++)
+            {
+                if (
+                    codes[i].Calls(IsSociallyProper)&&
+                    codes[i + 1].opcode == OpCodes.Brtrue_S)
+                {
+                    var copyBrtrue_S = new CodeInstruction(codes[i + 1]);
+                    codes.InsertRange(i + 2, new[]
+                    {
+                        new CodeInstruction(OpCodes.Ldarg_1),
+                        new CodeInstruction(OpCodes.Call, IsInGeneMilkList),
+                        copyBrtrue_S,
+                    });
+                    break;
+                }
+
+                
+
+            }
+            return codes;
+        }
+    }
     //添加面板显示
     [HarmonyPatchCategory("ProductionGenes_Patch")]
     [HarmonyPatch(typeof(ThingWithComps), "InspectStringPartsFromComps")]

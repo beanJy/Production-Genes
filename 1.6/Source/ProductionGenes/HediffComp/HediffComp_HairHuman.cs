@@ -87,6 +87,31 @@ namespace DDJY
                 return this.produce;
             }
         }
+        //添加按钮
+        public override IEnumerable<Gizmo> CompGetGizmos()
+        {
+            if (base.CompGetGizmos() != null)
+            {
+                foreach (Gizmo gizmo in base.CompGetGizmos())
+                {
+                    yield return gizmo;
+                }
+            }
+            if (DebugSettings.godMode)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV Fullness: 100%",
+                    defaultDesc = "DEV Fullness: 100%",
+                    action = () =>
+                    {
+                        Fullness = 1f;
+                    },
+                    icon = null
+                };
+            }
+
+        }
         //面板信息
         public string CompInspectStringExtra()
         {

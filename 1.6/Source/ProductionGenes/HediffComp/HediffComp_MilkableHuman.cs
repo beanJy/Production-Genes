@@ -7,7 +7,6 @@ namespace DDJY
 {
     public class HediffComp_MilkableHuman : HediffComp_GatherHuman
     {
-        //基因列表
         //未被覆盖的基因
         public Gene_MilkProduction nonOverriddenGene = null;
         //产物类型
@@ -161,6 +160,24 @@ namespace DDJY
                     };
                     yield return allowMilking_button;
                 }
+            }
+            if (DebugSettings.godMode)
+            {
+                yield return new Command_Action
+                {
+                    defaultLabel = "DEV Fullness: 100%",
+                    defaultDesc = "DEV Fullness: 100%",
+                    action = () =>
+                    {
+                        HediffComp_Lactating comp = parent.pawn.health.hediffSet.GetFirstHediffOfDef(HediffDefOf.Lactating)?.TryGetComp<HediffComp_Lactating>();
+                        if (comp != null)
+                        {
+                            comp.GreedyConsume(-1);
+                        }
+
+                    },
+                    icon = null
+                };
             }
 
         }
