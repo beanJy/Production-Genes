@@ -309,7 +309,7 @@ namespace DDJY.Patch
             return codes;
         }
     }
-    //添加面板显示
+    /*//添加面板显示
     [HarmonyPatchCategory("ProductionGenes_Patch")]
     [HarmonyPatch(typeof(ThingWithComps), "InspectStringPartsFromComps")]
     internal static class ThingWithComps_InspectStringPartsFromComps
@@ -359,5 +359,5 @@ namespace DDJY.Patch
                 __result = stringBuilder.ToString().TrimEnd(); 
             }
         }
-    }
+    }*/
 }

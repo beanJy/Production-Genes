@@ -72,6 +72,7 @@
     <Compile Include="JobDriver\JobDriver_HairHuman.cs" />
     <Compile Include="JobDriver\JobDriver_MilkableHuman.cs" />
     <Compile Include="Patch.cs" />
+    <Compile Include="ThingComp\Comp_ShowMilkHediffInfo.cs" />
     <Compile Include="WorkGiver\WorkGiver_GatherHumanBodyResources.cs" />
     <Compile Include="WorkGiver\WorkGiver_HairHuman.cs" />
     <Compile Include="WorkGiver\WorkGiver_MilkableHuman.cs" />

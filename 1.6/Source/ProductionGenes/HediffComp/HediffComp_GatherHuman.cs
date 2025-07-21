@@ -75,6 +75,18 @@ namespace DDJY
             }
             this.Fullness = 0f;
         }
+
+        public override void CompPostPostAdd(DamageInfo? dinfo)
+        {
+            base.CompPostPostAdd(dinfo);
+            AddShowMilkHediffInfoComp();
+        }
+
+        public override void CompPostPostRemoved()
+        {
+            base.CompPostPostRemoved();
+            RemoveShowMilkHediffInfoComp(Pawn); // 动态移除
+        }
         //thing是否在产物列表中
         public static bool IsInGeneMilkList(Thing t)
         {
@@ -103,6 +115,26 @@ namespace DDJY
             }
             return false;
         }
+        //添加面板显示组件
+        public void AddShowMilkHediffInfoComp()
+        {
+            if (!Pawn.AllComps.Any(c => c is Comp_ShowMyHediffInfo))
+            {
+                var comp = new Comp_ShowMyHediffInfo();
+                comp.parent = Pawn;
+                comp.Initialize(new CompProperties(typeof(Comp_ShowMyHediffInfo)));
+                Pawn.AllComps.Add(comp);
+            }
+        }
+        //移除面板显示组件
+        public static void RemoveShowMilkHediffInfoComp(Pawn pawn)
+        {
+            var comp = pawn.AllComps.FirstOrDefault(c => c is Comp_ShowMyHediffInfo);
+            if (comp != null)
+            {
+                pawn.AllComps.Remove(comp);
+            }
+        }
         public override void CompExposeData()
         {
             base.CompExposeData();
@@ -118,6 +150,7 @@ namespace DDJY
             if (Scribe.mode == LoadSaveMode.PostLoadInit)
             {
                 geneMilkList = geneMilkList_Serializable ?? new List<Thing>();
+                AddShowMilkHediffInfoComp();
             }
 
         }
