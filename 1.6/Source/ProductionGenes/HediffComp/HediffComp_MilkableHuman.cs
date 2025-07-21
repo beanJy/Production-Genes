@@ -1,5 +1,6 @@
 ﻿using RimWorld;
 using System.Collections.Generic;
+using System.Text;
 using UnityEngine;
 using Verse;
 
@@ -124,16 +125,25 @@ namespace DDJY
         //面板信息
         public string CompInspectStringExtra()
         {
-            string result = produce.label + " ";
+            if (produce == null)
+            {
+                return null;
+            }
+
+            var sb = new StringBuilder();
+            sb.Append(produce.label);
+            sb.Append(" ");
 
             if (this.Props is HediffCompProperties_MilkableHuman props && !props.InspectString.NullOrEmpty())
             {
-                result += props.InspectString.Translate() + ": ";
+                sb.Append(props.InspectString.Translate());
+                sb.Append(": ");
             }
 
-            result += Fullness.ToStringPercent();
+            sb.Append(Fullness.ToStringPercent());
+            sb.Append(".");
 
-            return result;
+            return sb.ToString();
         }
         //添加允许挤奶按钮
         public override IEnumerable<Gizmo> CompGetGizmos()

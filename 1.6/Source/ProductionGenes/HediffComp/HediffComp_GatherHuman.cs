@@ -132,9 +132,16 @@ namespace DDJY
             var comp = pawn.AllComps.FirstOrDefault(c => c is Comp_ShowMyHediffInfo);
             if (comp != null)
             {
-                pawn.AllComps.Remove(comp);
+                Hediff lactating = pawn.health?.hediffSet?.GetFirstHediffOfDef(HediffDefOf.Lactating);
+                Hediff hairProduction = pawn.health?.hediffSet?.GetFirstHediffOfDef(DDJY_HediffDefOf.DDJY_HairProductionHediff);
+
+                if (lactating == null && hairProduction == null)
+                {
+                    pawn.AllComps.Remove(comp);
+                }
             }
         }
+
         public override void CompExposeData()
         {
             base.CompExposeData();
