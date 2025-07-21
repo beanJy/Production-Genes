@@ -82,11 +82,6 @@ namespace DDJY
             AddShowMilkHediffInfoComp();
         }
 
-        public override void CompPostPostRemoved()
-        {
-            base.CompPostPostRemoved();
-            RemoveShowMilkHediffInfoComp(Pawn); // 动态移除
-        }
         //thing是否在产物列表中
         public static bool IsInGeneMilkList(Thing t)
         {
@@ -124,21 +119,6 @@ namespace DDJY
                 comp.parent = Pawn;
                 comp.Initialize(new CompProperties(typeof(Comp_ShowMyHediffInfo)));
                 Pawn.AllComps.Add(comp);
-            }
-        }
-        //移除面板显示组件
-        public static void RemoveShowMilkHediffInfoComp(Pawn pawn)
-        {
-            var comp = pawn.AllComps.FirstOrDefault(c => c is Comp_ShowMyHediffInfo);
-            if (comp != null)
-            {
-                Hediff lactating = pawn.health?.hediffSet?.GetFirstHediffOfDef(HediffDefOf.Lactating);
-                Hediff hairProduction = pawn.health?.hediffSet?.GetFirstHediffOfDef(DDJY_HediffDefOf.DDJY_HairProductionHediff);
-
-                if (lactating == null && hairProduction == null)
-                {
-                    pawn.AllComps.Remove(comp);
-                }
             }
         }
 
