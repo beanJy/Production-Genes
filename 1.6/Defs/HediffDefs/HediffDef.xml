@@ -18,5 +18,6 @@
     </comps>
     <isBad>false</isBad>
     <scenarioCanAdd>false</scenarioCanAdd>
+    <allowMothballIfLowPriorityWorldPawn>true</allowMothballIfLowPriorityWorldPawn>
   </HediffDef>
 </Defs>
